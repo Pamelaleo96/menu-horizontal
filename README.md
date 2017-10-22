@@ -29,4 +29,4 @@ Este repositorio contiene un proyecto de (Maquetación de una barra de navegacio
 ## Objetivo final:
     * Imagen final del menú horizontal:
 
-![recursos](assets/imgs/menu-horizonal.png)
+![recursos](assets/imgs/menu-horizontal.png)
