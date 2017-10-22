@@ -1,31 +1,39 @@
 body {
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
     font-family: sans-serif;
 }
 
 nav {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 ul {
-    outline: 1px solid blue;
+    /*outline: 1px solid blue;*/
     list-style: none;
     margin: 0;
     padding: 0;   
     background: #2e2e2a;
-    line-height: 30px;        
+    line-height: 40px;     
+    overflow: auto; /*devuelve su contexto de bloque y asi alvergue los eleemntos li flotando*/  
 }
 
 li {
-    outline: 1px solid yellow;
+    /*outline: 1px solid yellow;*/
     width:  100px;
-    display: inline-block; /*(colocarse un elemento al costado del otro sin perder la caracteristica de bloque que nos permiten modifcar su ancho)*/
-    text-align: center; /*Centra el texto de la lista mateniendo el orden*/    
+    text-align: center; /*Centra el texto de la lista mateniendo el orden*/  
+    /* display: inline-block; /*(colocarse un elemento al costado del otro sin perder la caracteristica de bloque que nos permiten modifcar su ancho)*/
+    /*Otra manera de convertir un elemnto inline a bloque*/
+    float: left; /*Ojo si aplicamos float saca de contexto al elemento bloque ul*/
 }
 
 a {
-    outline: 1px solid green;
+    /*outline: 1px solid green;*/
     text-decoration: none;
     display: block; /*Convertir la etiqueta <a> inline a bloque para que toda la superficia pueda ser linkeado*/
     color: #fff;
+}
+
+a:hover { /*cambiar el background del texto*/
+    background: #f9a91a;
+    color: #000;
 }
