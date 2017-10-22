@@ -1,1 +1,31 @@
-ECHO is on.
+body {
+    outline: 1px solid green;
+    font-family: sans-serif;
+}
+
+nav {
+    outline: 1px solid red;
+}
+
+ul {
+    outline: 1px solid blue;
+    list-style: none;
+    margin: 0;
+    padding: 0;   
+    background: #2e2e2a;
+    line-height: 30px;        
+}
+
+li {
+    outline: 1px solid yellow;
+    width:  100px;
+    display: inline-block; /*(colocarse un elemento al costado del otro sin perder la caracteristica de bloque que nos permiten modifcar su ancho)*/
+    text-align: center; /*Centra el texto de la lista mateniendo el orden*/    
+}
+
+a {
+    outline: 1px solid green;
+    text-decoration: none;
+    display: block; /*Convertir la etiqueta <a> inline a bloque para que toda la superficia pueda ser linkeado*/
+    color: #fff;
+}
